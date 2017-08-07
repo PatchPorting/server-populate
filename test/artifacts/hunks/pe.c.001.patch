@@ -1,0 +1,11 @@
+--- a/libyara/modules/pe.c
++++ b/libyara/modules/pe.c
+@@ -1017,7 +1020,7 @@ IMPORT_EXPORT_FUNCTION* pe_parse_exports(
+     ordinal = yr_le16toh(ordinals[i]);
+ 
+     // Now add it to the list...
+-    IMPORT_EXPORT_FUNCTION* exported_func = (IMPORT_EXPORT_FUNCTION*)
++    exported_func = (IMPORT_EXPORT_FUNCTION*)
+         yr_calloc(1, sizeof(IMPORT_EXPORT_FUNCTION));
+ 
+     if (exported_func == NULL)

@@ -1,0 +1,18 @@
+--- a/libyara/modules/pe.c
++++ b/libyara/modules/pe.c
+@@ -1546,10 +1551,12 @@ define_function(exports_ordinal)
+   YR_OBJECT* module = module();
+   PE* pe = (PE*) module->data;
+ 
++  IMPORT_EXPORT_FUNCTION* exported_func;
++
+   if (!pe)
+     return_integer(UNDEFINED);
+ 
+-  IMPORT_EXPORT_FUNCTION* exported_func = pe->exported_functions;
++  exported_func = pe->exported_functions;
+ 
+   while (exported_func != NULL)
+   {
+diff --git a/libyara/parser.c b/libyara/parser.c
+index 27ead97..f20df7d 100644

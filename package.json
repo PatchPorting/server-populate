@@ -1,0 +1,49 @@
+{
+  "name": "server-populate",
+  "version": "0.1.7",
+  "scripts": {
+    "start": "node .",
+    "debug": "DEBUG=server-populate* npm start",
+    "test": "NODE_ENV=test tap test",
+    "lint": "eslint .",
+    "dep-ok": "depcheck",
+    "dep-sec": "nsp check",
+    "dep-old": "ncu",
+    "posttest": "npm run lint && npm run dep-ok && npm run dep-sec"
+  },
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "debug": "^2.6.6",
+    "decompress": "^4.2.0",
+    "download": "^5.0.3",
+    "es6-promisify": "^5.0.0",
+    "fs-extra": "^3.0.0",
+    "line-by-line": "^0.1.5",
+    "lodash": "^4.17.4",
+    "node-svn-ultimate": "^1.0.4",
+    "p-map": "^1.1.1",
+    "promise-map-series": "^0.2.3",
+    "request": "^2.81.0",
+    "request-promise-native": "^1.0.3",
+    "require-directory": "^2.1.1",
+    "rimraf": "^2.6.1",
+    "server-http": "PatchPorting/server-http#0.1.13",
+    "validator": "^7.0.0"
+  },
+  "devDependencies": {
+    "depcheck": "^0.6.4",
+    "eslint": "^3.6.0",
+    "eslint-config-airbnb-base": "^8.0.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-json": "^1.2.0",
+    "npm-check-updates": "^2.8.0",
+    "nsp": "^2.1.0",
+    "tap": "^8.0.0"
+  },
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": "6.10.3",
+    "npm": "3.x.x"
+  }
+}

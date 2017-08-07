@@ -1,0 +1,12 @@
+--- a/libyara/modules/pe.c
++++ b/libyara/modules/pe.c
+@@ -1051,7 +1054,9 @@ void pe_parse_certificates(
+     PE* pe)
+ {
+   int i, counter = 0;
++
+   uint8_t* eod;
++  uintptr_t end;
+ 
+   PWIN_CERTIFICATE win_cert;
+ 

@@ -1,0 +1,10 @@
+--- a/libyara/modules/pe.c
++++ b/libyara/modules/pe.c
+@@ -1139,6 +1144,7 @@ void pe_parse_certificates(
+ 
+     for (i = 0; i < sk_X509_num(certs); i++)
+     {
++      time_t date_time;
+       const char* sig_alg;
+       char buffer[256];
+       int bytes;

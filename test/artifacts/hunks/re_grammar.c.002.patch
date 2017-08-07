@@ -1,0 +1,26 @@
+--- a/libyara/re_grammar.c
++++ b/libyara/re_grammar.c
+@@ -1376,19 +1378,19 @@ YYSTYPE yylval YY_INITIAL_VALUE (= yyval_default);
+ 
+         ERROR_IF((yyval.re_node) == NULL, ERROR_INSUFFICIENT_MEMORY);
+       }
+-#line 1380 "re_grammar.c" /* yacc.c:1646  */
++#line 1382 "re_grammar.c" /* yacc.c:1646  */
+     break;
+ 
+   case 7:
+-#line 145 "re_grammar.y" /* yacc.c:1646  */
++#line 147 "re_grammar.y" /* yacc.c:1646  */
+     {
+         (yyval.re_node) = (yyvsp[0].re_node);
+       }
+-#line 1388 "re_grammar.c" /* yacc.c:1646  */
++#line 1390 "re_grammar.c" /* yacc.c:1646  */
+     break;
+ 
+   case 8:
+-#line 149 "re_grammar.y" /* yacc.c:1646  */
++#line 151 "re_grammar.y" /* yacc.c:1646  */
+     {
+         (yyval.re_node) = yr_re_node_create(RE_NODE_CONCAT, (yyvsp[-1].re_node), (yyvsp[0].re_node));
+ 

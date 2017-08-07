@@ -1,0 +1,11 @@
+--- a/libyara/modules/pe.c
++++ b/libyara/modules/pe.c
+@@ -1250,7 +1256,7 @@ void pe_parse_certificates(
+         }
+       }
+ 
+-      time_t date_time = ASN1_get_time_t(X509_get_notBefore(cert));
++      date_time = ASN1_get_time_t(X509_get_notBefore(cert));
+       set_integer(date_time, pe->object, "signatures[%i].not_before", counter);
+ 
+       date_time = ASN1_get_time_t(X509_get_notAfter(cert));

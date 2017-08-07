@@ -1,0 +1,16 @@
+Index: contrib.xml
+===================================================================
+RCS file: /home/cvspublic/cocoon-2.0/src/documentation/xdocs/contrib.xml,v
+retrieving revision 1.7
+diff -u -r1.7 contrib.xml
+--- contrib.xml 30 Apr 2002 07:44:52 -0000      1.7
++++ contrib.xml 26 May 2002 04:08:23 -0000
+@@ -208,7 +208,7 @@
+    to create a patch. (The commands are for Linux.)
+   </p>
+
+- <s2 title="How to Establish your Local Repository">
++ <s2 title="How to Establish your Local Working Copy">
+
+   <p>
+    This will checkout the current copy of the master cvs repository and

@@ -1,0 +1,8 @@
+CVE-2016-9132 (In Botan 1.8.0 through 1.11.33, when decoding BER data an integer ...)
+	{DLA-786-1}
+	- botan1.10 1.10.14-1
+	[jessie] - botan1.10 <no-dsa> (Minor issue)
+	NOTE: Fixed in 1.10.14 and 1.11.34, all prior versions affected.
+	NOTE: Fixed by: https://github.com/randombit/botan/commit/987ad747db6d0d7e36f840398f3cf02e2fbfd90f
+	NOTE: Not believed to be exploitable in practice
+

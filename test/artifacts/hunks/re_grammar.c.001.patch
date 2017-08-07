@@ -1,0 +1,15 @@
+--- a/libyara/re_grammar.c
++++ b/libyara/re_grammar.c
+@@ -1365,9 +1365,11 @@ YYSTYPE yylval YY_INITIAL_VALUE (= yyval_default);
+   case 6:
+ #line 129 "re_grammar.y" /* yacc.c:1646  */
+     {
++        RE_NODE* node;
++
+         mark_as_not_fast_regexp();
+ 
+-        RE_NODE* node = yr_re_node_create(RE_NODE_EMPTY, NULL, NULL);
++        node = yr_re_node_create(RE_NODE_EMPTY, NULL, NULL);
+ 
+         DESTROY_NODE_IF((yyval.re_node) == NULL, (yyvsp[-1].re_node));
+         ERROR_IF(node == NULL, ERROR_INSUFFICIENT_MEMORY);

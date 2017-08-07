@@ -1,0 +1,13 @@
+--- a/libyara/lexer.c
++++ b/libyara/lexer.c
+@@ -3264,8 +3265,6 @@ int yr_lex_parse_rules_fd(
+   yydebug = 1;
+   #endif
+ 
+-  char buf[1024];
+-
+   yara_yyset_extra(compiler,yyscanner);
+   while (1)
+   {
+diff --git a/libyara/modules/dotnet.c b/libyara/modules/dotnet.c
+index 9041ab9..e385650 100644

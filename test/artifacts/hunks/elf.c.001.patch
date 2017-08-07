@@ -1,0 +1,14 @@
+--- a/libyara/modules/elf.c
++++ b/libyara/modules/elf.c
+@@ -213,9 +216,6 @@ void parse_elf_header_##bits##_##bo(                                           \
+           section[yr_##bo##16toh(elf->sh_str_table_index)].offset);            \
+     }                                                                          \
+                                                                                \
+-    elf##bits##_section_header_t* symtab = NULL;                               \
+-    elf##bits##_section_header_t* sym_strtab = NULL;                           \
+-                                                                               \
+     for (i = 0; i < yr_##bo##16toh(elf->sh_entry_count); i++)                  \
+     {                                                                          \
+       set_integer(yr_##bo##32toh(section->type), elf_obj,                      \
+diff --git a/libyara/modules/pe.c b/libyara/modules/pe.c
+index a89f5fc..2332aa6 100644

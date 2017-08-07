@@ -1,0 +1,12 @@
+--- a/libyara/modules/elf.c
++++ b/libyara/modules/elf.c
+@@ -203,6 +203,9 @@ void parse_elf_header_##bits##_##bo(                                           \
+   {                                                                            \
+     char* str_table = NULL;                                                    \
+                                                                                \
++    elf##bits##_section_header_t* symtab = NULL;                               \
++    elf##bits##_section_header_t* sym_strtab = NULL;                           \
++                                                                               \
+     section = (elf##bits##_section_header_t*)                                  \
+       ((uint8_t*) elf + yr_##bo##bits##toh(elf->sh_offset));                   \
+                                                                                \

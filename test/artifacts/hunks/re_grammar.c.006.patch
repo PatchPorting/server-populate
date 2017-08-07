@@ -1,0 +1,23 @@
+--- a/libyara/re_grammar.c
++++ b/libyara/re_grammar.c
+@@ -1446,15 +1454,17 @@ YYSTYPE yylval YY_INITIAL_VALUE (= yyval_default);
+         DESTROY_NODE_IF((yyval.re_node) == NULL, (yyvsp[-1].re_node));
+         ERROR_IF((yyval.re_node) == NULL, ERROR_INSUFFICIENT_MEMORY);
+       }
+-#line 1450 "re_grammar.c" /* yacc.c:1646  */
++#line 1458 "re_grammar.c" /* yacc.c:1646  */
+     break;
+ 
+   case 12:
+-#line 198 "re_grammar.y" /* yacc.c:1646  */
++#line 206 "re_grammar.y" /* yacc.c:1646  */
+     {
++        RE_AST* re_ast;
++
+         mark_as_not_fast_regexp();
+ 
+-        RE_AST* re_ast = yyget_extra(yyscanner);
++        re_ast = yyget_extra(yyscanner);
+         re_ast->flags |= RE_FLAGS_UNGREEDY;
+ 
+         (yyval.re_node) = yr_re_node_create(RE_NODE_PLUS, (yyvsp[-2].re_node), NULL);

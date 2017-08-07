@@ -1,0 +1,17 @@
+--- a/libyara/re_grammar.c
++++ b/libyara/re_grammar.c
+@@ -491,10 +491,10 @@ static const yytype_uint8 yytranslate[] =
+   /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
+ static const yytype_uint16 yyrline[] =
+ {
+-       0,   104,   104,   109,   113,   117,   128,   144,   148,   159,
+-     171,   185,   197,   211,   234,   258,   280,   303,   307,   313,
+-     319,   325,   334,   338,   344,   352,   358,   364,   370,   376,
+-     382,   388
++       0,   104,   104,   109,   113,   117,   128,   146,   150,   161,
++     175,   191,   205,   221,   244,   268,   290,   313,   317,   323,
++     329,   335,   344,   348,   354,   362,   368,   374,   380,   386,
++     392,   398
+ };
+ #endif
+ 

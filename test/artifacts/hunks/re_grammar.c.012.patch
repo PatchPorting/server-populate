@@ -1,0 +1,88 @@
+--- a/libyara/re_grammar.c
++++ b/libyara/re_grammar.c
+@@ -1650,71 +1660,71 @@ YYSTYPE yylval YY_INITIAL_VALUE (= yyval_default);
+ 
+         (yyval.re_node)->value = (yyvsp[0].integer);
+       }
+-#line 1654 "re_grammar.c" /* yacc.c:1646  */
++#line 1664 "re_grammar.c" /* yacc.c:1646  */
+     break;
+ 
+   case 25:
+-#line 353 "re_grammar.y" /* yacc.c:1646  */
++#line 363 "re_grammar.y" /* yacc.c:1646  */
+     {
+         (yyval.re_node) = yr_re_node_create(RE_NODE_WORD_CHAR, NULL, NULL);
+ 
+         ERROR_IF((yyval.re_node) == NULL, ERROR_INSUFFICIENT_MEMORY);
+       }
+-#line 1664 "re_grammar.c" /* yacc.c:1646  */
++#line 1674 "re_grammar.c" /* yacc.c:1646  */
+     break;
+ 
+   case 26:
+-#line 359 "re_grammar.y" /* yacc.c:1646  */
++#line 369 "re_grammar.y" /* yacc.c:1646  */
+     {
+         (yyval.re_node) = yr_re_node_create(RE_NODE_NON_WORD_CHAR, NULL, NULL);
+ 
+         ERROR_IF((yyval.re_node) == NULL, ERROR_INSUFFICIENT_MEMORY);
+       }
+-#line 1674 "re_grammar.c" /* yacc.c:1646  */
++#line 1684 "re_grammar.c" /* yacc.c:1646  */
+     break;
+ 
+   case 27:
+-#line 365 "re_grammar.y" /* yacc.c:1646  */
++#line 375 "re_grammar.y" /* yacc.c:1646  */
+     {
+         (yyval.re_node) = yr_re_node_create(RE_NODE_SPACE, NULL, NULL);
+ 
+         ERROR_IF((yyval.re_node) == NULL, ERROR_INSUFFICIENT_MEMORY);
+       }
+-#line 1684 "re_grammar.c" /* yacc.c:1646  */
++#line 1694 "re_grammar.c" /* yacc.c:1646  */
+     break;
+ 
+   case 28:
+-#line 371 "re_grammar.y" /* yacc.c:1646  */
++#line 381 "re_grammar.y" /* yacc.c:1646  */
+     {
+          (yyval.re_node) = yr_re_node_create(RE_NODE_NON_SPACE, NULL, NULL);
+ 
+          ERROR_IF((yyval.re_node) == NULL, ERROR_INSUFFICIENT_MEMORY);
+       }
+-#line 1694 "re_grammar.c" /* yacc.c:1646  */
++#line 1704 "re_grammar.c" /* yacc.c:1646  */
+     break;
+ 
+   case 29:
+-#line 377 "re_grammar.y" /* yacc.c:1646  */
++#line 387 "re_grammar.y" /* yacc.c:1646  */
+     {
+         (yyval.re_node) = yr_re_node_create(RE_NODE_DIGIT, NULL, NULL);
+ 
+         ERROR_IF((yyval.re_node) == NULL, ERROR_INSUFFICIENT_MEMORY);
+       }
+-#line 1704 "re_grammar.c" /* yacc.c:1646  */
++#line 1714 "re_grammar.c" /* yacc.c:1646  */
+     break;
+ 
+   case 30:
+-#line 383 "re_grammar.y" /* yacc.c:1646  */
++#line 393 "re_grammar.y" /* yacc.c:1646  */
+     {
+         (yyval.re_node) = yr_re_node_create(RE_NODE_NON_DIGIT, NULL, NULL);
+ 
+         ERROR_IF((yyval.re_node) == NULL, ERROR_INSUFFICIENT_MEMORY);
+       }
+-#line 1714 "re_grammar.c" /* yacc.c:1646  */
++#line 1724 "re_grammar.c" /* yacc.c:1646  */
+     break;
+ 
+   case 31:
+-#line 389 "re_grammar.y" /* yacc.c:1646  */
++#line 399 "re_grammar.y" /* yacc.c:1646  */
+     {
+         (yyval.re_node) = yr_re_node_create(RE_NODE_CLASS, NULL, NULL);
+ 

@@ -1,0 +1,16 @@
+--- a/libyara/re_grammar.c
++++ b/libyara/re_grammar.c
+@@ -1519,11 +1529,11 @@ YYSTYPE yylval YY_INITIAL_VALUE (= yyval_default);
+         (yyval.re_node)->end = 1;
+         (yyval.re_node)->greedy = FALSE;
+       }
+-#line 1523 "re_grammar.c" /* yacc.c:1646  */
++#line 1533 "re_grammar.c" /* yacc.c:1646  */
+     break;
+ 
+   case 15:
+-#line 259 "re_grammar.y" /* yacc.c:1646  */
++#line 269 "re_grammar.y" /* yacc.c:1646  */
+     {
+         RE_AST* re_ast = yyget_extra(yyscanner);
+         re_ast->flags |= RE_FLAGS_GREEDY;

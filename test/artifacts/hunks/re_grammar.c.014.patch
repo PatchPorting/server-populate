@@ -1,0 +1,11 @@
+--- a/libyara/re_grammar.c
++++ b/libyara/re_grammar.c
+@@ -1954,5 +1964,5 @@ YYSTYPE yylval YY_INITIAL_VALUE (= yyval_default);
+ #endif
+   return yyresult;
+ }
+-#line 397 "re_grammar.y" /* yacc.c:1906  */
++#line 407 "re_grammar.y" /* yacc.c:1906  */
+ 
+diff --git a/libyara/re_grammar.y b/libyara/re_grammar.y
+index 391dd49..9a22b44 100644

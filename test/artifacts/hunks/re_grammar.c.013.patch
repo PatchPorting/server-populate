@@ -1,0 +1,16 @@
+--- a/libyara/re_grammar.c
++++ b/libyara/re_grammar.c
+@@ -1722,11 +1732,11 @@ YYSTYPE yylval YY_INITIAL_VALUE (= yyval_default);
+ 
+         (yyval.re_node)->class_vector = (yyvsp[0].class_vector);
+       }
+-#line 1726 "re_grammar.c" /* yacc.c:1646  */
++#line 1736 "re_grammar.c" /* yacc.c:1646  */
+     break;
+ 
+ 
+-#line 1730 "re_grammar.c" /* yacc.c:1646  */
++#line 1740 "re_grammar.c" /* yacc.c:1646  */
+       default: break;
+     }
+   /* User semantic actions sometimes alter yychar, and that requires

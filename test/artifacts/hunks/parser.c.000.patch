@@ -1,0 +1,18 @@
+--- a/libyara/parser.c
++++ b/libyara/parser.c
+@@ -116,10 +116,12 @@ int yr_parser_emit_with_arg_reloc(
+     void** argument_address)
+ {
+   int64_t* ptr = NULL;
++  int result;
++
+   DECLARE_REFERENCE(void*, argument) a;
+   a.argument = argument;
+ 
+-  int result = yr_arena_write_data(
++  result = yr_arena_write_data(
+       yyget_extra(yyscanner)->code_arena,
+       &instruction,
+       sizeof(uint8_t),
+diff --git a/libyara/re_grammar.c b/libyara/re_grammar.c
+index dd148e7..4122c7d 100644

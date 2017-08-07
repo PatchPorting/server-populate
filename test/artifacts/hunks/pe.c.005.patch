@@ -1,0 +1,14 @@
+--- a/libyara/modules/pe.c
++++ b/libyara/modules/pe.c
+@@ -1259,10 +1265,7 @@ void pe_parse_certificates(
+       counter++;
+     }
+ 
+-    uintptr_t end = \
+-        (uintptr_t)((uint8_t *) win_cert) + \
+-        yr_le32toh(win_cert->Length);
+-
++    end = (uintptr_t)((uint8_t *) win_cert) + yr_le32toh(win_cert->Length);
+     win_cert = (PWIN_CERTIFICATE)(end + (end % 8));
+ 
+     BIO_free(cert_bio);

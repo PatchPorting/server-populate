@@ -1,0 +1,18 @@
+--- a/libyara/modules/pe.c
++++ b/libyara/modules/pe.c
+@@ -1520,12 +1523,14 @@ define_function(exports)
+   YR_OBJECT* module = module();
+   PE* pe = (PE*) module->data;
+ 
++  IMPORT_EXPORT_FUNCTION* exported_func;
++
+   // If not a PE, return UNDEFINED.
+ 
+   if (pe == NULL)
+     return_integer(UNDEFINED);
+ 
+-  IMPORT_EXPORT_FUNCTION* exported_func = pe->exported_functions;
++  exported_func = pe->exported_functions;
+ 
+   while (exported_func != NULL)
+   {
