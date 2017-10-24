@@ -30,9 +30,9 @@ const uriBase = 'http://security.debian.org/debian-security/pool/updates/main/';
 test('should get the link valid patch for full a "tar.gz"', (assert) => {
   assert.plan(2);
 
-  meth(`${uriBase}b/botan1.10/botan1.10_1.10.5-1+deb7u3.debian.tar.gz`, 'CVE-2016-9132')
+  meth(`${uriBase}b/botan1.10/botan1.10_1.10.5-1+deb7u4.debian.tar.gz`, 'CVE-2016-9132')
   .then((res) => {
-    assert.equal(res[0], 'botan1.10_1.10.5-1+deb7u3.debian.tar.gz/' +
+    assert.equal(res[0], 'botan1.10_1.10.5-1+deb7u4.debian.tar.gz/' +
                          'debian/patches/CVE-2016-9132.patch');
     assert.equal(res.length, 1);
   });
@@ -42,9 +42,9 @@ test('should get the link valid patch for full a "tar.gz"', (assert) => {
 test('should get the link valid patch for full a "tar.bz2"', (assert) => {
   assert.plan(2);
 
-  meth(`${uriBase}i/imagemagick/imagemagick_6.7.7.10-5+deb7u15.debian.tar.bz2`, 'CVE-2017-9500')
+  meth(`${uriBase}i/imagemagick/imagemagick_6.7.7.10-5+deb7u18.debian.tar.bz2`, 'CVE-2017-9500')
   .then((res) => {
-    assert.equal(res[0], 'imagemagick_6.7.7.10-5+deb7u15.debian.tar.bz2/' +
+    assert.equal(res[0], 'imagemagick_6.7.7.10-5+deb7u18.debian.tar.bz2/' +
                          'debian/patches/0219-CVE-2017-9500-Fix-denial-of-service-in-the-fun' +
                          'ction-ResetImageProfileIterator-via-crafted-file.patch');
     assert.ok(true);

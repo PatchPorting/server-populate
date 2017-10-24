@@ -32,7 +32,7 @@ test('should get the source uri for a "tar.gz"', (assert) => {
 
   meth('wheezy', 'botan1.10')
   .then(res =>
-      assert.equal(res, `${expectedUriBase}b/botan1.10/botan1.10_1.10.5-1+deb7u3.debian.tar.gz`));
+      assert.equal(res, `${expectedUriBase}b/botan1.10/botan1.10_1.10.5-1+deb7u4.debian.tar.gz`));
 });
 
 
@@ -42,7 +42,7 @@ test('should get the source uri for full a "tar.bz2"', (assert) => {
   meth('wheezy', 'imagemagick')
   .then(res => assert.equal(
     res,
-    `${expectedUriBase}i/imagemagick/imagemagick_6.7.7.10-5+deb7u15.debian.tar.bz2`
+    `${expectedUriBase}i/imagemagick/imagemagick_6.7.7.10-5+deb7u18.debian.tar.bz2`
   ));
 });
 
