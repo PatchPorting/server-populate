@@ -49,24 +49,6 @@ const providerM = server.models.provider;
 
 
 const populate = () => {
-  const setupM = server.models.setup;
-  const msgErr = 'Finding the default setup in DB';
-
-  utils.log.info('Looking for the default setup in DB ...');
-
-  // We want the last added one, the rest are kept for historical reasons.
-  setupM.find({ where: { name: 'default' }, limit: 1, order: 'id DESC' })
-  .then((setupDb) => {
-    utils.log.info('Default setup correctly got from DB', setupDb[0]);
-    const setupFound = setupDb[0];
-
-    if (!setupFound) { exit(msgErr); }
-
-    global.setupDefaultId = setupFound.id;
-  })
-  .catch(err => exit(msgErr, err));
-
-
   utils.log.info('(re) downloading the base files ...');
 
   Promise.all([

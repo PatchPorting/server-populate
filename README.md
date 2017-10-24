@@ -22,8 +22,6 @@ npm i
 
 ## Use
 
-The first time the frontend needs to be started before because it creates the default setup in DB.
-
 ```sh
 npm start
 ```
