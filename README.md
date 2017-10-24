@@ -7,7 +7,6 @@ Microservice to populate the database of the Patch porting project in a regular 
 - Continuos new patch monitoring. Source file: svn://scm.alioth.debian.org/svn/secure-testing/data/CVE/list
 - Patch download.
 - Hunks creation from patches.
-- Hunks serve.
 
 ## Install
 
