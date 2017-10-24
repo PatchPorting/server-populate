@@ -19,6 +19,10 @@
 
 'use strict';
 
+// Script with the same behaviour but the CVE file is not downloaded.
+// This way we can include only a subset of the packages.
+// TODO: Abstract the common parts with "inspectLine.js".
+
 // process.env.VCAP_SERVICES = JSON.stringify({ paste: here });
 // process.env.NODE_ENV = 'production';
 
