@@ -28,6 +28,7 @@
     "require-directory": "^2.1.1",
     "rimraf": "^2.6.1",
     "server-http": "PatchPorting/server-http#0.1.13",
+    "sleep": "^5.1.1",
     "validator": "^7.0.0"
   },
   "devDependencies": {
