@@ -19,8 +19,8 @@
 
 'use strict';
 
-// Script with the same behaviour but the CVE file is not downloaded.
-// This way we can include only a subset of the packages.
+// Script with the same behaviour but the CVE file is not downloaded and
+// the still not parsed CVEs are loaded from the DB.
 // TODO: Abstract the common parts with "inspectLine.js".
 
 // process.env.VCAP_SERVICES = JSON.stringify({ paste: here });
